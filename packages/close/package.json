@@ -1,6 +1,6 @@
 {
   "name": "by-close",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "by-close component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
