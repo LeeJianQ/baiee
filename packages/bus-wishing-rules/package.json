@@ -1,6 +1,6 @@
 {
   "name": "by-bus-wishing-rules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "by-bus-wishing-rules component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
