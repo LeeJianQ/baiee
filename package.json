@@ -1,7 +1,8 @@
 {
   "name": "baiee",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
+  "private": true,
   "repository": "https://github.com/LeeJianQ/baiee.git",
   "author": "weil107<1034470737@qq.com>",
   "license": "MIT",
