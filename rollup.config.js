@@ -5,6 +5,7 @@ import vue from "rollup-plugin-vue";
 import less from 'rollup-plugin-less';
 import postcss from "rollup-plugin-postcss";
 import image from '@rollup/plugin-image';
+import url from '@rollup/plugin-url';
 import { terser } from "rollup-plugin-terser";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 
@@ -17,6 +18,9 @@ const plugins = [
     css: true,
     // Explicitly convert template to render function
     compileTemplate: true,
+  }),
+  url({
+    destDir: `./dist/assets`
   }),
   json(),
   nodeResolve(),

@@ -39,6 +39,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "@rollup/plugin-url": "^6.0.0",
     "@storybook/addon-controls": "^6.1.14",
     "less": "^4.1.0",
     "less-loader": "^7.3.0",
