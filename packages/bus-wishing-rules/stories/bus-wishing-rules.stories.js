@@ -8,12 +8,19 @@ export default {
 const Template = (args, { argTypes }) => ({
   components: { ByBusWishingRules },
   props: Object.keys(argTypes),
+  data () {
+    return {
+      showState: true
+    }
+  },
   template:
-  '<by-bus-wishing-rules></by-bus-wishing-rules>',
+  '<by-bus-wishing-rules :show="showState" @close="showState = false"></by-bus-wishing-rules>',
 });
 
 /* 复制模版函数 */
 export const BusWishingRules = Template.bind({});
 
 /* props 属性 */
-BusWishingRules.args = {};
+BusWishingRules.args = {
+  show: true
+};

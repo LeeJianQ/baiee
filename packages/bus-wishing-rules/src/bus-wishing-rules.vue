@@ -1,5 +1,5 @@
 <template>
-  <div class="by-bus-wishing-rules">
+  <div class="by-bus-wishing-rules" v-show="show">
     <div class="bus-wishing-rules">
       <ul>
         <li v-for="(item, key) in rules" :key="key">
@@ -23,6 +23,10 @@ import ByClose from '../../close'
       ByClose
     },
     props: {
+      show: {
+        type: Boolean,
+        default: false
+      },
       rules: {
         type: Number,
         default: function () {
@@ -89,7 +93,7 @@ import ByClose from '../../close'
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5000;
+    z-index: 5001;
     bottom: 15vh;
   }
 }
