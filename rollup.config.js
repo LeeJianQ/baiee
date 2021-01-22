@@ -4,6 +4,7 @@ import json from "@rollup/plugin-json";
 import vue from "rollup-plugin-vue";
 import less from 'rollup-plugin-less';
 import postcss from "rollup-plugin-postcss";
+import image from '@rollup/plugin-image';
 import { terser } from "rollup-plugin-terser";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 
@@ -20,6 +21,7 @@ const plugins = [
   json(),
   nodeResolve(),
   less(),
+  image(),
   postcss({
     // 把 css 插入到 style 中
     // inject: true,
