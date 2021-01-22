@@ -1,6 +1,6 @@
 {
   "name": "by-confirm",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "by-confirm component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
@@ -9,8 +9,6 @@
   "scripts": {
     "del": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
   },
   "keywords": []
 }
