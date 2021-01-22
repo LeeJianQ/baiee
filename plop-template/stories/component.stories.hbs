@@ -1,0 +1,19 @@
+import By{{properCase name}} from '../src/{{name}}.vue'
+
+export default {
+  title: 'By{{properCase name}}',
+  component: By{{properCase name}}
+}
+
+const Template = (args, { argTypes }) => ({
+  components: { By{{properCase name}} },
+  props: Object.keys(argTypes),
+  template:
+  '<by-{{name}}></by-{{name}}>',
+});
+
+/* 复制模版函数 */
+export const {{properCase name}} = Template.bind({});
+
+/* props 属性 */
+{{properCase name}}.args = {};
